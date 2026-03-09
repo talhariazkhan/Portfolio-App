@@ -1,0 +1,123 @@
+/* ===== FOOTER ===== */
+.footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 48px 0 24px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.footer-brand .nav-logo {
+    margin-bottom: 16px;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 300px;
+}
+
+.footer-col h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col a {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: all var(--transition);
+}
+
+.footer-col a:hover {
+    color: var(--primary);
+    transform: translateX(3px);
+    display: inline-block;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.footer-social-link {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    transition: all var(--transition);
+}
+
+.footer-social-link:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-bottom-links a {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    transition: color var(--transition);
+}
+
+.footer-bottom-links a:hover {
+    color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+}
